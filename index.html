@@ -1,0 +1,64 @@
+<!--ok well this is it...
+1.0
+im tired and this is good enough
+gn-->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: powderblue;
+      text-align: center;
+    }
+    h1 {
+      color: blue;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    button {
+      font-family: "Brush Script MT", "Lucida Handwriting", cusrive, arial;
+    }
+  </style>
+</head>
+<body>
+  <h1>Website Proxy Tool</h1>
+  <h3>Enter the desired URL below:</h3>
+  <input type="text" id="desired-url">
+  <br><br>
+  <h3>Enter the extrememath URL (leave it blank for default):</h3>
+  <input type="text" id="extrememath-url">
+  <br><br>
+  <button id="access-website">Begin the very high tech procedure</button>
+
+  <p id="output"></p>
+
+<script>
+  document.getElementById("access-website").addEventListener("click", function () {
+    const desiredUrl = document.getElementById("desired-url").value;
+    const extrememathUrl = document.getElementById("extrememath-url").value || "rainingbooks.org";
+
+    if (desiredUrl) {
+      const proxyUrl = `${extrememathUrl}/uv.html?site=${desiredUrl}`;
+      window.open(proxyUrl, "_blank"); // Open the proxy URL in a new tab
+      document.getElementById("output").textContent = "Accessing the website...";
+    } else {
+      document.getElementById("output").textContent = "Please enter the desired URL.";
+    }
+  });
+</script>
+  <br></br>
+  written by me and chatgpt!
+  thanks to ronnie and henry for making this possible!
+  <br></br>
+  <br></br>
+  <a href="classroom.google.com">
+   <button>panic</button>
+</a>
+   <br></br>
+  <a href="classroom.google.com">
+   <button>panic (genesis)</button>
+</a>
+</body>
+</html>
